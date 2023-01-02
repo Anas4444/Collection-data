@@ -26,7 +26,7 @@ connection.connect(function(error){
 					if (err) throw err;
 					console.log("Table created");
 					
-					var sqlalter = "ALTER TABLE sample_data MODIFY id int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5, ADD PRIMARY KEY(id)"
+					var sqlalter = "ALTER TABLE sample_data MODIFY id int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5"
 					connection.query(sqlalter, function(err) {
 						if (err) throw err;
 						console.log("Table successfully modified");
